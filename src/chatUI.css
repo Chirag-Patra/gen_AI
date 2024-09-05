@@ -1,0 +1,152 @@
+.App {
+  text-align: center;
+  display: flex;
+  background-color:#f1f1f4;
+  color: white;
+  position: absolute;
+  top: 0;bottom: 0;left: 0;right: 0;
+}
+
+.sidemenu{
+  width: 240px;
+  
+  background-color: #e1edff;
+  padding: 10px;
+
+}
+/* Light theme (default) */
+body {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+/* Dark theme */
+body.dark-mode {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+.dark-mode .chatbox, .dark-mode .sidemenu {
+  background-color: #1e1e1e;
+}
+
+.dark-mode .chat_message {
+  background-color: #2a2a2a;
+}
+
+.dark-mode .chat_text_input input {
+  background-color: #333333;
+  color: #ffffff;}
+.new-chat-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px;
+  margin-top: 20px;
+  cursor: pointer;
+  width: 100%;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+.new-chat-button:hover {
+  background-color: #0056b3;
+}
+.chatbox{
+  flex: 1;
+  position: relative;
+  background-color: #ffffff;
+  color: #5009b5;
+ 
+ 
+}
+.chat_text_input{
+padding: 24px;
+position: absolute;
+bottom: 0;left: 0;right: 20px;
+
+}
+.chat_input{
+  background-color: #f1f1f4;
+  width:1500px;
+  border-radius: 5px;
+  border: none;
+  padding: 12px;
+  color: grey;
+  font-size: 1.25em;
+  outline: none;
+  box-shadow: 0 0 4px 0 rgba(0,0,0,0.5);
+  position: fixed;
+  bottom: 15px;
+  left: 300px;
+
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+.chat_log{
+  
+  text-align: left;
+ 
+
+  
+}
+
+.chat_message.ai{
+  background-color: #f1f1f4;
+
+}
+.chat_message_center{
+   max-width: 480px;
+   margin-left: auto;
+   margin-right: auto;
+   display: flex;
+   padding: 12px;
+   padding-left:  24px ;
+   padding-right: 24px;
+ 
+}
+
+.avatar{
+  background: f1f1f4;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  
+}
+
+.message{
+  padding: 12px;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
