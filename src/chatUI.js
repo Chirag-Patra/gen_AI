@@ -46,18 +46,18 @@ const ChatUI = () => {
   return (
     <div className="App">
       
-      <aside className='sidemenu'>
+      {/* <aside className='sidemenu'>
         <h1>SideBar</h1>
-        <button className="new-chat-button" onClick={handleNewChat} style={{width:'200px',height:'50px',position:'fixed',bottom: '15px',left: '30px'}}>
+        
+         
+      </aside>  */}
+      
+      <section className='chatbox'> 
+      <button className="new-chat-button" onClick={handleNewChat} style={{width:'200px',height:'50px',position:'fixed',bottom: '15px',left: '30px'}}>
          + New Chat
         </button>
        
-         
-      </aside> 
-      
-      <section className='chatbox'> 
-      
-        <h1>Ask ChatGod</h1>
+        
         <div className='chat_log'>
           {chatLog.map((chat, index) => (
             <div key={index} className={`chat_message ${chat.sender === 'bot' ? 'ai' : ''}`}>

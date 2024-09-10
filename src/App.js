@@ -1,12 +1,19 @@
 import React from 'react';
-import './normalize.css';
+
 import ChatUI from './chatUI';
 import './chatUI.css'
+import MyNavbar from './components/navbar';
+import './index.css'; 
+import Sidebar from './components/sidebar';
 
 
 function App() {
   return (
-    <div> 
+    <div>
+
+      <MyNavbar />
+      <Sidebar/>
+
       <ChatUI />
     </div>
   );
